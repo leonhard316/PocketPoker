@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9BE70242DFDBCC3004E3B62 /* PocketPokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70232DFDBCC3004E3B62 /* PocketPokerApp.swift */; };
+		B9BE70262DFDBCC3004E3B62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70252DFDBCC3004E3B62 /* ContentView.swift */; };
+		B9BE70282DFDBCC6004E3B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BE70272DFDBCC6004E3B62 /* Assets.xcassets */; };
+		B9BE702B2DFDBCC6004E3B62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BE702A2DFDBCC6004E3B62 /* Preview Assets.xcassets */; };
+		B9BE70352DFDBCC7004E3B62 /* PocketPokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70342DFDBCC7004E3B62 /* PocketPokerTests.swift */; };
+		B9BE703F2DFDBCC7004E3B62 /* PocketPokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE703E2DFDBCC7004E3B62 /* PocketPokerUITests.swift */; };
+		B9BE70412DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70402DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift */; };
+		B9BE704E2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE704D2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift */; };
+		B9BE70502DFDBFA7004E3B62 /* CPUSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE704F2DFDBFA7004E3B62 /* CPUSettingsView.swift */; };
+		B9BE70522DFDBFBE004E3B62 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70512DFDBFBE004E3B62 /* GameView.swift */; };
+		B9BE70542DFDBFD4004E3B62 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70532DFDBFD4004E3B62 /* Card.swift */; };
+		B9BE70562DFDBFEF004E3B62 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70552DFDBFEF004E3B62 /* GameLogic.swift */; };
+		B9BE70582DFDC00C004E3B62 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70572DFDC00C004E3B62 /* Player.swift */; };
+		B9BE705A2DFDC024004E3B62 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70592DFDC024004E3B62 /* AIPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9BE70312DFDBCC7004E3B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9BE70182DFDBCC3004E3B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9BE701F2DFDBCC3004E3B62;
+			remoteInfo = PocketPoker;
+		};
+		B9BE703B2DFDBCC7004E3B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9BE70182DFDBCC3004E3B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9BE701F2DFDBCC3004E3B62;
+			remoteInfo = PocketPoker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9BE70202DFDBCC3004E3B62 /* PocketPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BE70232DFDBCC3004E3B62 /* PocketPokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPokerApp.swift; sourceTree = "<group>"; };
+		B9BE70252DFDBCC3004E3B62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9BE70272DFDBCC6004E3B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9BE702A2DFDBCC6004E3B62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9BE70302DFDBCC7004E3B62 /* PocketPokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketPokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BE70342DFDBCC7004E3B62 /* PocketPokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPokerTests.swift; sourceTree = "<group>"; };
+		B9BE703A2DFDBCC7004E3B62 /* PocketPokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketPokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BE703E2DFDBCC7004E3B62 /* PocketPokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPokerUITests.swift; sourceTree = "<group>"; };
+		B9BE70402DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPokerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9BE704D2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCountSelectionView.swift; sourceTree = "<group>"; };
+		B9BE704F2DFDBFA7004E3B62 /* CPUSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUSettingsView.swift; sourceTree = "<group>"; };
+		B9BE70512DFDBFBE004E3B62 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		B9BE70532DFDBFD4004E3B62 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B9BE70552DFDBFEF004E3B62 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		B9BE70572DFDC00C004E3B62 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B9BE70592DFDC024004E3B62 /* AIPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9BE701D2DFDBCC3004E3B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE702D2DFDBCC7004E3B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE70372DFDBCC7004E3B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9BE70172DFDBCC3004E3B62 = {
+			isa = PBXGroup;
+			children = (
+				B9BE70222DFDBCC3004E3B62 /* PocketPoker */,
+				B9BE70332DFDBCC7004E3B62 /* PocketPokerTests */,
+				B9BE703D2DFDBCC7004E3B62 /* PocketPokerUITests */,
+				B9BE70212DFDBCC3004E3B62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9BE70212DFDBCC3004E3B62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE70202DFDBCC3004E3B62 /* PocketPoker.app */,
+				B9BE70302DFDBCC7004E3B62 /* PocketPokerTests.xctest */,
+				B9BE703A2DFDBCC7004E3B62 /* PocketPokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9BE70222DFDBCC3004E3B62 /* PocketPoker */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE70232DFDBCC3004E3B62 /* PocketPokerApp.swift */,
+				B9BE70252DFDBCC3004E3B62 /* ContentView.swift */,
+				B9BE70272DFDBCC6004E3B62 /* Assets.xcassets */,
+				B9BE704D2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift */,
+				B9BE704F2DFDBFA7004E3B62 /* CPUSettingsView.swift */,
+				B9BE70512DFDBFBE004E3B62 /* GameView.swift */,
+				B9BE70532DFDBFD4004E3B62 /* Card.swift */,
+				B9BE70552DFDBFEF004E3B62 /* GameLogic.swift */,
+				B9BE70572DFDC00C004E3B62 /* Player.swift */,
+				B9BE70592DFDC024004E3B62 /* AIPlayer.swift */,
+				B9BE70292DFDBCC6004E3B62 /* Preview Content */,
+			);
+			path = PocketPoker;
+			sourceTree = "<group>";
+		};
+		B9BE70292DFDBCC6004E3B62 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE702A2DFDBCC6004E3B62 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9BE70332DFDBCC7004E3B62 /* PocketPokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE70342DFDBCC7004E3B62 /* PocketPokerTests.swift */,
+			);
+			path = PocketPokerTests;
+			sourceTree = "<group>";
+		};
+		B9BE703D2DFDBCC7004E3B62 /* PocketPokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE703E2DFDBCC7004E3B62 /* PocketPokerUITests.swift */,
+				B9BE70402DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift */,
+			);
+			path = PocketPokerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9BE701F2DFDBCC3004E3B62 /* PocketPoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BE70442DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPoker" */;
+			buildPhases = (
+				B9BE701C2DFDBCC3004E3B62 /* Sources */,
+				B9BE701D2DFDBCC3004E3B62 /* Frameworks */,
+				B9BE701E2DFDBCC3004E3B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketPoker;
+			productName = PocketPoker;
+			productReference = B9BE70202DFDBCC3004E3B62 /* PocketPoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9BE702F2DFDBCC7004E3B62 /* PocketPokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BE70472DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPokerTests" */;
+			buildPhases = (
+				B9BE702C2DFDBCC7004E3B62 /* Sources */,
+				B9BE702D2DFDBCC7004E3B62 /* Frameworks */,
+				B9BE702E2DFDBCC7004E3B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9BE70322DFDBCC7004E3B62 /* PBXTargetDependency */,
+			);
+			name = PocketPokerTests;
+			productName = PocketPokerTests;
+			productReference = B9BE70302DFDBCC7004E3B62 /* PocketPokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9BE70392DFDBCC7004E3B62 /* PocketPokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BE704A2DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPokerUITests" */;
+			buildPhases = (
+				B9BE70362DFDBCC7004E3B62 /* Sources */,
+				B9BE70372DFDBCC7004E3B62 /* Frameworks */,
+				B9BE70382DFDBCC7004E3B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9BE703C2DFDBCC7004E3B62 /* PBXTargetDependency */,
+			);
+			name = PocketPokerUITests;
+			productName = PocketPokerUITests;
+			productReference = B9BE703A2DFDBCC7004E3B62 /* PocketPokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9BE70182DFDBCC3004E3B62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B9BE701F2DFDBCC3004E3B62 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B9BE702F2DFDBCC7004E3B62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B9BE701F2DFDBCC3004E3B62;
+					};
+					B9BE70392DFDBCC7004E3B62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B9BE701F2DFDBCC3004E3B62;
+					};
+				};
+			};
+			buildConfigurationList = B9BE701B2DFDBCC3004E3B62 /* Build configuration list for PBXProject "PocketPoker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9BE70172DFDBCC3004E3B62;
+			productRefGroup = B9BE70212DFDBCC3004E3B62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9BE701F2DFDBCC3004E3B62 /* PocketPoker */,
+				B9BE702F2DFDBCC7004E3B62 /* PocketPokerTests */,
+				B9BE70392DFDBCC7004E3B62 /* PocketPokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9BE701E2DFDBCC3004E3B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BE702B2DFDBCC6004E3B62 /* Preview Assets.xcassets in Resources */,
+				B9BE70282DFDBCC6004E3B62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE702E2DFDBCC7004E3B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE70382DFDBCC7004E3B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9BE701C2DFDBCC3004E3B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BE70502DFDBFA7004E3B62 /* CPUSettingsView.swift in Sources */,
+				B9BE704E2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift in Sources */,
+				B9BE70262DFDBCC3004E3B62 /* ContentView.swift in Sources */,
+				B9BE70242DFDBCC3004E3B62 /* PocketPokerApp.swift in Sources */,
+				B9BE70582DFDC00C004E3B62 /* Player.swift in Sources */,
+				B9BE70542DFDBFD4004E3B62 /* Card.swift in Sources */,
+				B9BE70522DFDBFBE004E3B62 /* GameView.swift in Sources */,
+				B9BE705A2DFDC024004E3B62 /* AIPlayer.swift in Sources */,
+				B9BE70562DFDBFEF004E3B62 /* GameLogic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE702C2DFDBCC7004E3B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BE70352DFDBCC7004E3B62 /* PocketPokerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BE70362DFDBCC7004E3B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BE70412DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift in Sources */,
+				B9BE703F2DFDBCC7004E3B62 /* PocketPokerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9BE70322DFDBCC7004E3B62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9BE701F2DFDBCC3004E3B62 /* PocketPoker */;
+			targetProxy = B9BE70312DFDBCC7004E3B62 /* PBXContainerItemProxy */;
+		};
+		B9BE703C2DFDBCC7004E3B62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9BE701F2DFDBCC3004E3B62 /* PocketPoker */;
+			targetProxy = B9BE703B2DFDBCC7004E3B62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B9BE70422DFDBCC7004E3B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9BE70432DFDBCC7004E3B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9BE70452DFDBCC7004E3B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketPoker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9BE70462DFDBCC7004E3B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketPoker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9BE70482DFDBCC7004E3B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketPoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketPoker";
+			};
+			name = Debug;
+		};
+		B9BE70492DFDBCC7004E3B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketPoker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketPoker";
+			};
+			name = Release;
+		};
+		B9BE704B2DFDBCC7004E3B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketPoker;
+			};
+			name = Debug;
+		};
+		B9BE704C2DFDBCC7004E3B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = euler.PocketPokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketPoker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9BE701B2DFDBCC3004E3B62 /* Build configuration list for PBXProject "PocketPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BE70422DFDBCC7004E3B62 /* Debug */,
+				B9BE70432DFDBCC7004E3B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BE70442DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BE70452DFDBCC7004E3B62 /* Debug */,
+				B9BE70462DFDBCC7004E3B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BE70472DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BE70482DFDBCC7004E3B62 /* Debug */,
+				B9BE70492DFDBCC7004E3B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BE704A2DFDBCC7004E3B62 /* Build configuration list for PBXNativeTarget "PocketPokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BE704B2DFDBCC7004E3B62 /* Debug */,
+				B9BE704C2DFDBCC7004E3B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9BE70182DFDBCC3004E3B62 /* Project object */;
+}
