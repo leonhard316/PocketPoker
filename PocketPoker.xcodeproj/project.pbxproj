@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93B2A922DFECF8D00F32324 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93B2A912DFECF8D00F32324 /* XCTest.framework */; };
+		B93B2A932DFECF8D00F32324 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B93B2A912DFECF8D00F32324 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9BE70242DFDBCC3004E3B62 /* PocketPokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70232DFDBCC3004E3B62 /* PocketPokerApp.swift */; };
 		B9BE70262DFDBCC3004E3B62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70252DFDBCC3004E3B62 /* ContentView.swift */; };
 		B9BE70282DFDBCC6004E3B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BE70272DFDBCC6004E3B62 /* Assets.xcassets */; };
 		B9BE702B2DFDBCC6004E3B62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BE702A2DFDBCC6004E3B62 /* Preview Assets.xcassets */; };
-		B9BE70352DFDBCC7004E3B62 /* PocketPokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70342DFDBCC7004E3B62 /* PocketPokerTests.swift */; };
 		B9BE703F2DFDBCC7004E3B62 /* PocketPokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE703E2DFDBCC7004E3B62 /* PocketPokerUITests.swift */; };
 		B9BE70412DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70402DFDBCC7004E3B62 /* PocketPokerUITestsLaunchTests.swift */; };
 		B9BE704E2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE704D2DFDBF7D004E3B62 /* PlayerCountSelectionView.swift */; };
@@ -22,6 +23,7 @@
 		B9BE70582DFDC00C004E3B62 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70572DFDC00C004E3B62 /* Player.swift */; };
 		B9BE705A2DFDC024004E3B62 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70592DFDC024004E3B62 /* AIPlayer.swift */; };
 		B9BE705C2DFE6CF6004E3B62 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B9BE705B2DFE6CF6004E3B62 /* .gitignore */; };
+		B9BE705D2DFE71E0004E3B62 /* PocketPokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70342DFDBCC7004E3B62 /* PocketPokerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B93B2A942DFECF8D00F32324 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B93B2A932DFECF8D00F32324 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B93B2A912DFECF8D00F32324 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B9BE70202DFDBCC3004E3B62 /* PocketPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BE70232DFDBCC3004E3B62 /* PocketPokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPokerApp.swift; sourceTree = "<group>"; };
 		B9BE70252DFDBCC3004E3B62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93B2A922DFECF8D00F32324 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93B2A902DFECF8C00F32324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B93B2A912DFECF8D00F32324 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9BE70172DFDBCC3004E3B62 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,7 @@
 				B9BE70332DFDBCC7004E3B62 /* PocketPokerTests */,
 				B9BE703D2DFDBCC7004E3B62 /* PocketPokerUITests */,
 				B9BE70212DFDBCC3004E3B62 /* Products */,
+				B93B2A902DFECF8C00F32324 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +188,7 @@
 				B9BE701C2DFDBCC3004E3B62 /* Sources */,
 				B9BE701D2DFDBCC3004E3B62 /* Frameworks */,
 				B9BE701E2DFDBCC3004E3B62 /* Resources */,
+				B93B2A942DFECF8D00F32324 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +315,7 @@
 				B9BE70262DFDBCC3004E3B62 /* ContentView.swift in Sources */,
 				B9BE70242DFDBCC3004E3B62 /* PocketPokerApp.swift in Sources */,
 				B9BE70582DFDC00C004E3B62 /* Player.swift in Sources */,
+				B9BE705D2DFE71E0004E3B62 /* PocketPokerTests.swift in Sources */,
 				B9BE70542DFDBFD4004E3B62 /* Card.swift in Sources */,
 				B9BE70522DFDBFBE004E3B62 /* GameView.swift in Sources */,
 				B9BE705A2DFDC024004E3B62 /* AIPlayer.swift in Sources */,
@@ -298,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE70352DFDBCC7004E3B62 /* PocketPokerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
