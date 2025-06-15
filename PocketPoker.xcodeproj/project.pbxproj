@@ -21,6 +21,7 @@
 		B9BE70562DFDBFEF004E3B62 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70552DFDBFEF004E3B62 /* GameLogic.swift */; };
 		B9BE70582DFDC00C004E3B62 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70572DFDC00C004E3B62 /* Player.swift */; };
 		B9BE705A2DFDC024004E3B62 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE70592DFDC024004E3B62 /* AIPlayer.swift */; };
+		B9BE705C2DFE6CF6004E3B62 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B9BE705B2DFE6CF6004E3B62 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B9BE70552DFDBFEF004E3B62 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		B9BE70572DFDC00C004E3B62 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B9BE70592DFDC024004E3B62 /* AIPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlayer.swift; sourceTree = "<group>"; };
+		B9BE705B2DFE6CF6004E3B62 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		B9BE70172DFDBCC3004E3B62 = {
 			isa = PBXGroup;
 			children = (
+				B9BE705B2DFE6CF6004E3B62 /* .gitignore */,
 				B9BE70222DFDBCC3004E3B62 /* PocketPoker */,
 				B9BE70332DFDBCC7004E3B62 /* PocketPokerTests */,
 				B9BE703D2DFDBCC7004E3B62 /* PocketPokerUITests */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BE702B2DFDBCC6004E3B62 /* Preview Assets.xcassets in Resources */,
+				B9BE705C2DFE6CF6004E3B62 /* .gitignore in Resources */,
 				B9BE70282DFDBCC6004E3B62 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
